@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Trendyol" allow-return-values="true" verbose="1" parallel="classes" thread-count="3">
+    <listeners>
+        <listener class-name="com.trendyol.listener.TestListener"/>
+    </listeners>
+    <test name="Test Cases">
+        <classes>
+            <class name="cases.LoginTest"/>
+            <class name="cases.SearchTest"/>
+            <class name="cases.HomeTest"/>
+        </classes>
+    </test>
+</suite>
+
+
